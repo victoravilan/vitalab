@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="VitaLab"/>
+    <meta property="og:description" content="A chemistry puzzle game"/>
+    <meta property="og:image" content="/img/logo-vitalab.png" type="image/png"/>
+    <meta property="og:url" content="/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:author" content="VitaLab"/>
+    <meta property="og:site_name" content="VitaLab"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:site" content="@VitaLab"/>
+    <meta property="twitter:title" content="VitaLab"/>
+    <meta property="twitter:description" content="A chemistry puzzle game"/>
+    <meta property="twitter:image" content="/img/logo-vitalab.png" type="image/png"/>
+    <link rel="shortcut icon" href="/img/favicon-ico.png" type="image/png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon-180.png" type="image/png"/>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <title>
+      VitaLab
+    </title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script type="module" src="/src/react-app/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            // Registration successful
+          }, function(err) {
+            // Registration failed
+            console.warn('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
