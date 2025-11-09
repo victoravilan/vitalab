@@ -15,9 +15,8 @@ export default defineConfig({
     outDir: 'dist', // build directo en dist
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
+      input: path.resolve(__dirname, 'index.html'),
+      // Elimina cualquier opción 'external' que pueda afectar a index.html
     },
   },
   resolve: {
