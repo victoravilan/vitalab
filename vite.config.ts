@@ -12,7 +12,7 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 5000,
-    outDir: 'dist', // build directo en dist
+    outDir: 'dist/client', // build directo en dist/client para Netlify
     emptyOutDir: true,
     rollupOptions: {
       input: path.resolve(__dirname, 'index.html'),
