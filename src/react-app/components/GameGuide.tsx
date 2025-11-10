@@ -185,7 +185,8 @@ export default function GameGuide({ isOpen, onClose }: GameGuideProps) {
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0" />
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0" />
                       <p className="text-gray-300 text-sm">
                         <strong className="text-white">Piensa en sinergia:</strong> Busca nutrientes que se complementen entre sí.
                       </p>
