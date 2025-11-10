@@ -185,8 +185,7 @@ export default function GameGuide({ isOpen, onClose }: GameGuideProps) {
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0" />
                       <p className="text-gray-300 text-sm">
                         <strong className="text-white">Piensa en sinergia:</strong> Busca nutrientes que se complementen entre sí.
                       </p>
@@ -200,6 +199,45 @@ export default function GameGuide({ isOpen, onClose }: GameGuideProps) {
                     </div>
                   </div>
                 </div>
+              </motion.div>
+
+              {/* Ideal Combinations */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="bg-gradient-to-br from-green-900/30 to-teal-900/30 rounded-xl p-6 border border-green-400/20"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <Lightbulb className="w-6 h-6 text-green-400" />
+                  <h3 className="text-xl font-bold text-white">Sinergias Nutricionales Clave</h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  En <strong className="text-white">Vital-lab</strong>, descubrirás que muchos nutrientes trabajan mejor en equipo. 
+                  Estas "sinergias" potencian sus efectos en el cuerpo, mejorando la absorción, la utilización o protegiéndose mutuamente.
+                </p>
+                <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
+                  <li>
+                    <strong className="text-white">Vitamina C + Hierro:</strong> La Vitamina C transforma el hierro no hemo (vegetal) en una forma más fácil de absorber, multiplicando su biodisponibilidad.
+                    <p className="text-gray-400 text-sm italic ml-4">¿Cuándo? Consume alimentos ricos en hierro vegetal (lentejas, espinacas) junto con fuentes de Vitamina C (cítricos, pimientos).</p>
+                  </li>
+                  <li>
+                    <strong className="text-white">Vitamina D + Calcio:</strong> La Vitamina D es indispensable para que el calcio se absorba correctamente en el intestino y se fije en los huesos.
+                    <p className="text-gray-400 text-sm italic ml-4">¿Cuándo? Asegura una exposición solar adecuada o suplementos de Vitamina D al consumir lácteos o vegetales ricos en calcio.</p>
+                  </li>
+                  <li>
+                    <strong className="text-white">Vitamina E + Vitamina C:</strong> La Vitamina C ayuda a regenerar la Vitamina E oxidada, permitiéndole seguir actuando como un potente antioxidante.
+                    <p className="text-gray-400 text-sm italic ml-4">¿Cuándo? Combina frutos secos y aceites vegetales (Vitamina E) con frutas y verduras frescas (Vitamina C).</p>
+                  </li>
+                  <li>
+                    <strong className="text-white">Magnesio + Vitamina B1 (Tiamina):</strong> El magnesio es un cofactor esencial para que la Vitamina B1 cumpla su rol en el metabolismo energético.
+                    <p className="text-gray-400 text-sm italic ml-4">¿Cuándo? Incluye cereales integrales (B1) y verduras de hoja verde o frutos secos (Magnesio) en tu dieta.</p>
+                  </li>
+                </ul>
+                <p className="text-gray-300 leading-relaxed mt-4">
+                  <strong className="text-white">¿Por qué es importante?</strong> Conocer estas combinaciones te permite optimizar tu nutrición, 
+                  asegurando que tu cuerpo aproveche al máximo los nutrientes que consumes y previniendo deficiencias.
+                </p>
               </motion.div>
 
               {/* Call to Action */}
