@@ -154,7 +154,7 @@ export default function Home() {
           </div>
           
           <h1 className="text-6xl font-bold text-white mb-4 font-orbitron bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            VitaLab
+            Vital-lab
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Descubre las combinaciones químicas de vitaminas y minerales en este emocionante laboratorio virtual
