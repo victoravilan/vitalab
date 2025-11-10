@@ -1,7 +1,27 @@
 {
-  "extends": "./tsconfig.node.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2023", "WebWorker"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "composite": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": false,
+    "declaration": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
     "types": [],
     "baseUrl": ".",
     "paths": {
@@ -9,7 +29,7 @@
     }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts"
+    "src/worker/**/*.ts",
+    "src/worker/**/*.d.ts"
   ]
 }

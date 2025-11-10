@@ -4,12 +4,5 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" },
     { "path": "./tsconfig.worker.json" }
-  ],
-  "types": [],
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts"
-  ],
-  "forceConsistentCasingInFileNames": true,
-  "strict": true
+  ]
 }
