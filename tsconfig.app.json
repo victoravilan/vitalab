@@ -19,7 +19,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
 
