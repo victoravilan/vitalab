@@ -10,6 +10,7 @@ export interface ChemicalProperty {
   biological_role: string;
   daily_requirement?: string;
   deficiency_symptoms: string;
+  food_sources?: string[]; // Añadido
 }
 
 export const chemicalProperties: Record<string, ChemicalProperty> = {
@@ -22,7 +23,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Ácido carboxílico', 'Alcohol'],
     biological_role: 'Cofactor enzimático antioxidante',
     daily_requirement: '75-90mg',
-    deficiency_symptoms: 'Escorbuto, sangrado de encías'
+    deficiency_symptoms: 'Escorbuto, sangrado de encías',
+    food_sources: ['Cítricos', 'Kiwi', 'Fresas', 'Pimientos', 'Brócoli']
   },
   'Fe²⁺': {
     molecular_weight: 55.845,
@@ -31,7 +33,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Ion de transición'],
     biological_role: 'Transporte de oxígeno en hemoglobina',
     daily_requirement: '8-18mg',
-    deficiency_symptoms: 'Anemia ferropénica, fatiga'
+    deficiency_symptoms: 'Anemia ferropénica, fatiga',
+    food_sources: ['Carnes rojas', 'Espinacas', 'Lentejas', 'Quinoa', 'Chocolate negro']
   },
   'C₂₇H₄₄O': {
     molecular_weight: 384.64,
@@ -42,7 +45,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Alcohol secundario', 'Cicloalcano'],
     biological_role: 'Regulador de absorción de calcio',
     daily_requirement: '600-800 UI',
-    deficiency_symptoms: 'Raquitismo, osteomalacia'
+    deficiency_symptoms: 'Raquitismo, osteomalacia',
+    food_sources: ['Pescados grasos', 'Yema de huevo', 'Lácteos fortificados', 'Exposición solar']
   },
   'Ca²⁺': {
     molecular_weight: 40.078,
@@ -51,7 +55,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Ion alcalinotérreo'],
     biological_role: 'Estructura ósea y contracción muscular',
     daily_requirement: '1000-1200mg',
-    deficiency_symptoms: 'Osteoporosis, calambres'
+    deficiency_symptoms: 'Osteoporosis, calambres',
+    food_sources: ['Lácteos', 'Verduras de hoja verde', 'Almendras', 'Sardinas', 'Tofu']
   },
   'C₁₂H₁₇N₄OS⁺': {
     molecular_weight: 265.35,
@@ -62,7 +67,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Pirimidina', 'Tiazol'],
     biological_role: 'Coenzima en metabolismo de carbohidratos',
     daily_requirement: '1.1-1.2mg',
-    deficiency_symptoms: 'Beriberi, neuropatía'
+    deficiency_symptoms: 'Beriberi, neuropatía',
+    food_sources: ['Cereales integrales', 'Legumbres', 'Nueces', 'Carne de cerdo', 'Semillas']
   },
   'Mg²⁺': {
     molecular_weight: 24.305,
@@ -71,7 +77,8 @@ export const chemicalProperties: Record<string, ChemicalProperty> = {
     functional_groups: ['Ion alcalinotérreo'],
     biological_role: 'Cofactor en 300+ enzimas',
     daily_requirement: '310-420mg',
-    deficiency_symptoms: 'Calambres, arritmias'
+    deficiency_symptoms: 'Calambres, arritmias',
+    food_sources: ['Verduras de hoja verde', 'Frutos secos', 'Semillas', 'Cereales integrales', 'Chocolate negro']
   }
 };
 

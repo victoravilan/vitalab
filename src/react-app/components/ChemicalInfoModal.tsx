@@ -20,7 +20,7 @@ export default function ChemicalInfoModal({ tube, isOpen, onClose }: ChemicalInf
     fullName: tube.name, // Usar el nombre del tubo como nombre completo
     description: `Peso molecular: ${info.molecular_weight} g/mol. Solubilidad: ${info.solubility}. Estado a temperatura ambiente: ${info.state_at_room_temp}.`,
     functions: [`Rol biológico: ${info.biological_role}`],
-    foodSources: [], // No disponible directamente en chemicalProperties, se puede dejar vacío o añadir lógica
+    foodSources: info.food_sources || [], // Ahora disponible
     deficiencySymptoms: info.deficiency_symptoms,
     dailyNeeds: info.daily_requirement || 'No especificado'
   } : null;
