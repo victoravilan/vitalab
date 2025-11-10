@@ -5,11 +5,13 @@
     { "path": "./tsconfig.node.json" },
     { "path": "./tsconfig.worker.json" }
   ],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
   "types": [],
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts"
-  ],
-  "forceConsistentCasingInFileNames": true,
-  "strict": true
+  ]
 }
